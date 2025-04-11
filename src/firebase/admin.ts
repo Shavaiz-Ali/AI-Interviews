@@ -20,6 +20,5 @@ const initFirebaseAdmin = () => {
     db: getFirestore(),
   };
 };
-
 // Export server-side Auth and Firestore
 export const { auth, db } = initFirebaseAdmin();
