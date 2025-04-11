@@ -3,11 +3,7 @@ import { cert, initializeApp, getApps } from "firebase-admin/app";
 import { getAuth } from "firebase-admin/auth";
 import { getFirestore } from "firebase-admin/firestore";
 
-/**
- * Initializes the Firebase Admin SDK if it hasn't been initialized yet.
- * It uses environment variables to configure credentials.
- * Returns an object containing the server-side Auth and Firestore services.
- */
+
 const initFirebaseAdmin = () => {
   if (!getApps().length) {
     initializeApp({
